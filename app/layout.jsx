@@ -1,11 +1,11 @@
-import '../styles/globals.css';
-import { Footer } from '../components/footer';
-import { Header } from '../components/header';
+import '../styles/globals.scss';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 
 export const metadata = {
     title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
+        template: '%s | Nexa Verse',
+        default: 'Nexa Verse | Główna',
     }
 };
 
@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head>
-            <body className="antialiased text-white bg-blue-900">
-                <div className="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
-                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
+            <body>
+                <div>
+                    <div>
                         <Header />
-                        <main className="grow">{children}</main>
+                        <main>{children}</main>
                         <Footer />
                     </div>
                 </div>
