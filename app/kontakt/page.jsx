@@ -2,7 +2,7 @@
 export default function Page() {
     return (
         <div>
-            <h1>Strona główna</h1>
+            <h1>Strona kontaktowa</h1>
         </div>
     );
 }

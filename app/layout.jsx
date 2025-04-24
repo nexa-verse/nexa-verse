@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
+                <link rel="stylesheet" href="https://use.typekit.net/wnw6xad.css"/> 
             </head>
             <body>
                 <div>
