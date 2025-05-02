@@ -23,6 +23,12 @@ body{
     background-color: $color-primary;
     font-family: $font-primary;
     color: $color-secondary;
+    padding: auto;
+    width: 100%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 ol, ul{

@@ -1,0 +1,29 @@
+.button{
+    padding: $padding-xs $padding-small;  
+    margin: $padding-small;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 1rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    &__text{
+        font-size: 1rem;
+        text-decoration: none;
+    }     
+    &__icon{
+        font-size: 1.5rem;
+        margin-right: $padding-xs;
+    }
+    &--filled{
+        color: $color-accent2;
+        background-color: $color-secondary;
+        &:hover{
+            transition: transform 0.2s ease-in-out;
+            transform: scale(1.02);
+        }
+    }
+}

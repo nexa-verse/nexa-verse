@@ -1,0 +1,90 @@
+.navbar{
+    display: none;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;    
+    flex-direction: row;    
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    margin: $padding-small;
+    &__link{
+        margin-right: $padding-medium;
+        font-size: 1.1rem;
+        &:hover{
+            color: $color-accent2;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+        flex-direction: row;    
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    &__contact{
+        p{
+            font-size: 0.8rem;
+            color: $color-accent1;
+            text-align: end;
+            margin-right: $padding-small;
+            margin-bottom: -$padding-small + 0.1rem;
+        }
+    }
+}
+.navbar--mobile{
+    position: relative;
+    width: 100%;
+    .navbar__navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        flex-direction: row;    
+        flex-wrap: nowrap;
+        margin-inline: $padding-small;
+        height: 4rem;
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: $color-secondary;
+            font-size: 3rem;
+        }
+    }
+    .navbar__menu{
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 4rem - $padding-small);
+        background-color: $color-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;    
+        flex-wrap: nowrap;
+        .links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;    
+            flex-direction: column;    
+            flex-wrap: nowrap;
+            height: 80%;
+        }
+        
+    }
+    margin: auto;
+    margin-top: $padding-small;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        display: flex;
+    }
+    .navbar--mobile{
+        display: none;
+    }
+}

@@ -17,13 +17,9 @@ export default function RootLayout({ children }) {
                 <link rel="stylesheet" href="https://use.typekit.net/wnw6xad.css"/> 
             </head>
             <body>
-                <div>
-                    <div>
-                        <Header />
-                        <main>{children}</main>
-                        <Footer />
-                    </div>
-                </div>
+                <Header />
+                <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );
