@@ -1,6 +1,7 @@
 // import utilities
 
 @import './utils/variables';
+@import './utils/typography';
 
 
 // import base settings
@@ -14,6 +15,7 @@
 @import './components/buttons';
 @import './components/header';
 @import './components/footer';
+@import './components/in-build';
 
 // import pages styles
 

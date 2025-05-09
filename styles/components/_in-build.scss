@@ -1,0 +1,35 @@
+.in-build{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: $padding-medium;
+    margin-top: $padding-medium + 4rem;
+    padding: $padding-small;
+    .image{
+        margin-top: $padding-xs;
+    }
+    .text{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .text svg{
+        font-size: 1.5rem;
+        margin: $padding-xs;
+    }
+    .headline{
+        color: $color-accent2;
+    }
+    .container {
+        display: flex;  
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

@@ -25,12 +25,12 @@ body{
     color: $color-secondary;
     padding: auto;
     width: 100%;
-    border: 1px solid green;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    position: relative;
 }
 
 ol, ul{

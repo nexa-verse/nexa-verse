@@ -1,0 +1,29 @@
+.subheadline{
+    font-size: 2.0rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-family: $font-headlines;
+    font-weight: normal;
+    margin-top: $padding-small;
+    margin-bottom: $padding-small;
+    color: $color-primary-light;
+    text-align: center;
+}
+.headline{
+    font-size: 4.0rem;
+    line-height: 4rem;
+    text-transform: lowercase;
+    font-family: $font-primary;
+    font-weight: 800;
+    margin-top: $padding-small;
+    margin-bottom: $padding-small;
+    color: $color-primary-light;
+}
+.text{
+    font-size: 1rem;
+    font-family: $font-primary;
+    font-weight: normal;
+    margin-top: $padding-xs;
+    margin-bottom: $padding-xs;
+    color: $color-secondary;
+}

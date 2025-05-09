@@ -1,8 +1,7 @@
-
+import InBuild from 'components/InBuild';
+import Image from 'next/image';
 export default function Page() {
     return (
-        <div>
-            <h1>Strona główna</h1>
-        </div>
+        <InBuild />
     );
 }

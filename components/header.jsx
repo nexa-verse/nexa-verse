@@ -19,17 +19,19 @@ const Header = () => {
           <Link className='navbar__link' href='/'>
             <Image src={'/images/logo/logo_outline_basic.svg'} alt='Logo' width={100} height={50} />
           </Link>
-          <Link className='navbar__link' href='/uslugi'>Usługi</Link>
+          {/* <Link className='navbar__link' href='/uslugi'>Usługi</Link>
           <Link className='navbar__link' href='/o-nas'>O nas</Link>
-          <Link className='navbar__link' href='/realizacje'>Realizacje</Link>
+          <Link className='navbar__link' href='/realizacje'>Realizacje</Link> */}
         </nav>
         <nav className='navbar__contact'>
           <p>
             <FaPhone />+48 789 173 186
           </p>
-          <Button icon={<MdOutlineConnectWithoutContact />} modifier='filled'>
-            <Link href='/kontakt'>Skontaktuj się z nami</Link>
-          </Button>
+          <Link href='/kontakt'>
+            <Button icon={<MdOutlineConnectWithoutContact />} modifier='filled'>
+              Skontaktuj się z nami
+            </Button>
+          </Link>
         </nav>     
     </header>
     <header className='navbar--mobile'>
@@ -44,13 +46,15 @@ const Header = () => {
       {isOpen && 
       <nav className='navbar__menu'>
         <ul className='links'>          
-          <Link className='links__item' href='/uslugi' >Usługi</Link>
+          {/* <Link className='links__item' href='/uslugi' >Usługi</Link>
           <Link className='links__item' href='/o-nas' >O nas</Link>
-          <Link className='links__item' href='/realizacje' >Realizacje</Link>
+          <Link className='links__item' href='/realizacje' >Realizacje</Link> */}
          
-          <Button icon={<MdOutlineConnectWithoutContact />} modifier='filled'>
-            <Link href='/kontakt'>Skontaktuj się z nami</Link>
-          </Button>
+          <Link href='/kontakt'>
+            <Button icon={<MdOutlineConnectWithoutContact />} modifier='filled'>
+              Skontaktuj się z nami
+            </Button>
+          </Link>
           
         
         </ul>
