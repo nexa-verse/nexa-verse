@@ -1,7 +1,10 @@
-import InBuild from "components/InBuild";
+import ContactForm from "components/ContactForm";
 
 export default function Page() {
     return (
-            <InBuild />
+        <div>
+            <h1>Kontakt</h1>
+            <ContactForm />
+        </div>
     );
 }
